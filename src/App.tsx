@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Title from './components/Title';
 import { List } from "./components/Title"
+import { Outlet } from 'react-router-dom';
 import { Lista } from './components/Title';
 
 function App() {
@@ -52,8 +53,8 @@ function App() {
 
   return (
     <div className='App'>
-      
         <h1>GitHub Finder</h1>
+        <Outlet/>
     </div>
   );
 }
