@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
 import Title from './components/Title';
 import { List } from "./components/Title"
 import { Outlet } from 'react-router-dom';
 import { Lista } from './components/Title';
+import styles from "./App.module.css"
 
 function App() {
 
@@ -52,7 +52,7 @@ function App() {
   // ]
 
   return (
-    <div className='App'>
+    <div className={styles.App}>
         <h1>GitHub Finder</h1>
         <Outlet/>
     </div>
